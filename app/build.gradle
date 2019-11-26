@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "net.fkm.livepushertest"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        disable 'GoogleAppIndexingWarning'
+        baseline file("lint-baseline.xml")
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // ButterKnife
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    // Toast样式
+    implementation 'me.drakeet.support:toastcompat:1.1.0'
+    // 通用标题栏：https://github.com/getActivity/TitleBar
+    implementation 'com.hjq:titlebar:3.5'
+
+    implementation files('libs/live-beauty-3.4.0.jar')
+    implementation files('libs/live-face-3.4.0.jar')
+    implementation files('libs/live-pusher-3.4.0.jar')
+    implementation(name: 'alivc-core-pusher', ext: 'aar')
+    implementation(name: 'AlivcPlayer', ext: 'aar')
+    implementation(name: 'AlivcReporter', ext: 'aar')
+    implementation(name: 'live-pusher-resources-3.4.0', ext: 'aar')
+
+}

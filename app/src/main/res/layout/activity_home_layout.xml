@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_bg"
+    android:orientation="vertical"
+    tools:context=".activity.HomeActivity">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_80"
+        android:background="@color/colorPrimaryDark"
+        app:bar_style="transparent"
+        app:icon_back="false"
+        app:title="域名及参数设置" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_login_edittext"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <net.fkm.livepushertest.view.widget.ClearEditText
+                    android:id="@+id/etPushDomain"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="请输入推流域名"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_login_edittext"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <net.fkm.livepushertest.view.widget.ClearEditText
+                    android:id="@+id/etLiveDomain"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="请输入播流域名"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_login_edittext"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <net.fkm.livepushertest.view.widget.ClearEditText
+                    android:id="@+id/etPushKey"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="请输入推流鉴权Key"
+                    android:inputType="textPassword"
+                    android:maxLength="100"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_login_edittext"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <net.fkm.livepushertest.view.widget.ClearEditText
+                    android:id="@+id/etLiveKey"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="请输入播流鉴权Key"
+                    android:inputType="textPassword"
+                    android:maxLength="100"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="请选择推流方式，默认竖屏推流" />
+
+            <RadioGroup
+                android:id="@+id/mRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbPortrait"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="竖屏推流" />
+
+                <RadioButton
+                    android:id="@+id/rbLandscape"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="横屏推流" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="请选择推流分辨率，默认544x960" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox1"
+                        style="@style/select_style"
+                        android:tag="chb1"
+                        android:text="192x320" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox2"
+                        style="@style/select_style"
+                        android:tag="chb2"
+                        android:text="240x320" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox3"
+                        style="@style/select_style"
+                        android:tag="chb3"
+                        android:text="368x640" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox4"
+                        style="@style/select_style"
+                        android:tag="chb4"
+                        android:text="480x640" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox5"
+                        style="@style/select_style"
+                        android:checked="true"
+                        android:tag="chb5"
+                        android:text="544x960" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox6"
+                        style="@style/select_style"
+                        android:tag="chb6"
+                        android:text="720x1280" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnTest"
+                style="@style/ButtonStyle1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:text="推流测试用例" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

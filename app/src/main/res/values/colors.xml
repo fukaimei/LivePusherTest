@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryDark">@color/base_color</color>
+    <color name="colorAccent">@color/base_color</color>
+
+    <color name="base_color">#ffce3d3a</color>
+
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="color_font">#333333</color>
+
+    <color name="colorTheme">#ffce3d3a</color>
+
+    <!--页面背景的颜色-->
+    <color name="color_page_bg">#F1F3F4</color>
+
+    <color name="colorWhite">#ffffffff</color>
+
+    <!--主页tab背景-->
+    <color name="colorTabBg">#ffffffff</color>
+    <color name="colorTabTextCheck">#ffce3d3a</color>
+    <color name="colorTabTextNormal">#585858</color>
+    <color name="colorTabLine">#ffce3d3a</color>
+
+    <!--侧边栏分割线-->
+    <color name="colorNavLine">#E0E0E0</color>
+
+    <!--分割线-->
+    <color name="colorLine">#EBEBEB</color>
+    <!--首页分割线-->
+    <color name="colorHomeLine">#D4D4D4</color>
+
+    <color name="colorLineDeep">#BBBBBB</color>
+
+    <!--item的分割线-->
+    <color name="colorLineItem">#FFDDDDDD</color>
+
+    <!--tab标签栏文字的颜色-->
+    <color name="colorTabText">#585858</color>
+    <!--正文文字颜色-->
+    <color name="colorContent">#ff333333</color>
+    <!--水波纹或5.0以下选择器颜色-->
+    <color name="tabBackground">#777D7D7D</color>
+    <!--item的水波纹颜色-->
+    <color name="itemBackground">#DD7D7D7D</color>
+    <!--item的5.0一下版本选择器颜色-->
+    <color name="itemLowBackground">#d9d9d9</color>
+
+    <!--透明色-->
+    <color name="colorTransparent">#00000000</color>
+    <!--半透明-->
+    <color name="colorBanTransparent">#11000000</color>
+    <color name="colorBanTransparent1">#33000000</color>
+    <color name="colorBanTransparent2">#99000000</color>
+    <!--首页item文字颜色-->
+    <color name="colorSubtitle">#999</color>
+
+    <color name="colorTitle">#666</color>
+    <!--谈红色  用于首页调整点击变色-->
+    <color name="colorSmallRed">#faebeb</color>
+
+    <color name="colorRateRed">#FB5B81</color>
+
+    <!--没有水波纹效果的颜色选择器-->
+    <color name="colorItemBackground">#d9d9d9</color>
+
+    <!--选择分类按下颜色-->
+    <color name="colorChoosePress">#DDD</color>
+
+    <!--暂时用于反馈文字-->
+    <color name="text_common">#191919</color>
+
+    <color name="text_deed_bg">#f6f6f6</color>
+    <!--dialog的查看详情键-->
+    <color name="colorBtDialog">#38659C</color>
+
+    <!--&lt;!&ndash;透明颜色，全透明：0x00000000&ndash;&gt;-->
+    <!--<color name="transparent">#00000000</color>-->
+    <!--&lt;!&ndash;半透明颜色&ndash;&gt;-->
+    <!--<color name="translucent">#0x33000000</color>-->
+
+    <color name="line_gray">#dcdcdc</color>
+    <color name="line_gray_light">#f1f1f1</color>
+    <color name="gray_page_bg">#ecedf1</color>
+    <color name="gray_text">#5b5b5b</color>
+    <color name="gray_text_dark">#292929</color>
+    <color name="gray_text_light">#979797</color>
+    <color name="window_half_transparent">#90000000</color>
+    <color name="blue_white">#0eabe5</color>
+
+    <color name="white5">#0cFFFFFF</color>
+    <color name="white10">#22FFFFFF</color>
+    <color name="white20">#33FFFFFF</color>
+    <color name="white30">#44FFFFFF</color>
+    <color name="white40">#66FFFFFF</color>
+    <color name="white50">#88FFFFFF</color>
+    <color name="white60">#99FFFFFF</color>
+    <color name="white70">#BBFFFFFF</color>
+    <color name="white80">#CCFFFFFF</color>
+    <color name="white90">#EEFFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="black">#FF000000</color>
+    <color name="black90">#EE000000</color>
+    <color name="black80">#CC000000</color>
+    <color name="black70">#BB000000</color>
+    <color name="black60">#99000000</color>
+    <color name="black50">#88000000</color>
+    <color name="black40">#66000000</color>
+    <color name="black30">#44000000</color>
+    <color name="black20">#33000000</color>
+    <color name="black10">#22000000</color>
+    <color name="black5">#0c000000</color>
+
+    <!-- 按钮按压时的颜色 -->
+    <color name="colorButtonPressed">#0076FF</color>
+    <!-- 按钮禁用时的颜色 -->
+    <color name="colorButtonDisable">#DDDDDD</color>
+
+    <!-- 灰色 -->
+    <color name="gray">#808080</color>
+    <!-- 红色 -->
+    <color name="red">#FFFF0000</color>
+    <!-- 金色 -->
+    <color name="gold">#FFD700</color>
+    <!-- 黄色 -->
+    <color name="yellow">#FFFF00</color>
+    <!-- 绿色 -->
+    <color name="green">#008000</color>
+    <!-- 蓝色 -->
+    <color name="blue">#0000FF</color>
+    <!-- 紫色 -->
+    <color name="purple">#800080</color>
+    <!-- 粉色 -->
+    <color name="pink">#FFC0CB</color>
+    <!-- 橙色 -->
+    <color name="orange">#FFA500</color>
+
+    <color name="LightGray">#eff2f2</color>
+    <color name="player_colorPlayWebItemTextBg">#eff2f2</color>
+
+    <color name="common_red">#f11919</color>
+    <color name="common_gray">#787676</color>
+
+    <color name="color_333333">#333333</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_fed952">#fed952</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_cdcdcd">#cdcdcd</color>
+    <color name="color_efefef">#efefef</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_5a79b7">#5a79b7</color>
+    <color name="color_00ffffff">#00ffffff</color>
+    <color name="color_efeff4">#efeff4</color>
+    <color name="color_c0c4ce">#efeff4</color>
+    <color name="color_bfbfbf">#bfbfbf</color>
+    <color name="color_e3e3e3">#e3e3e3</color>
+    <color name="color_cc0000">#cc0000</color>
+    <color name="color_d0d0d0">#d0d0d0</color>
+    <color name="color_ffff4444">#ffff4444</color>
+    <color name="color_ff33b5e5">#ff33b5e5</color>
+    <color name="color_dddddd">#dddddd</color>
+    <color name="color_fd4634">#fd4634</color>
+
+    <!-- QR_Code -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="system_bar_color">#fed952</color>
+
+    <color name="loading_start_color">#ffffff</color>
+    <color name="loading_center_color">#ffdc35</color>
+    <color name="loading_end_color">#ce0000</color>
+
+    <color name="comui_tab">#ff999999</color>
+    <color name="comui_tab_selected">#ffce3d3a</color>
+
+</resources>

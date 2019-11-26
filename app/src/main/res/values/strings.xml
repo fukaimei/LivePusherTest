@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LivePusherTest</string>
+    <string name="network_unavailable">当前网络不可用，请检查您的网络设置</string>
+</resources>
